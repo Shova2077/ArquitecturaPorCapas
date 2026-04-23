@@ -1,7 +1,35 @@
 using System.IO.Pipes;
 using EjerciciosPOO3;
-/*
-List<Vehiculo> vehiculos = new List<Vehiculo>()
+
+bool menu = true;
+while (menu == true)
+{
+    Console.WriteLine("---Menu de Ejercicios---");
+    Console.WriteLine("1-Ejercicio 1");
+    Console.WriteLine("2-Ejercicio 2");
+    Console.WriteLine("0- Salir");
+    int op = Convert.ToInt32(Console.ReadLine());
+    switch (op)
+    {
+        case 0:
+            menu = false;
+        break;
+        case 1:
+            Ejercicio01();
+        break;
+        case 2:
+            Ejercicio02();
+        break;
+        case 3:
+            Ejercicio03();
+        break;
+    }
+}
+
+
+static void Ejercicio01()
+{
+    List<Vehiculo> vehiculos = new List<Vehiculo>()
 {
     new Auto("Lamborghini", "Gallardo", 2015, 2),
     new Moto("Susuki", "Hayabusa", 2018, false),
@@ -21,4 +49,36 @@ catch (ArgumentException ex)
 {
     Console.WriteLine(ex.Message);
 }
-*/
+}
+
+static void Ejercicio02()
+{
+    List<Bebida> bebidas = new List<Bebida>()
+    {
+     new Cafe("Latte", 6500, true),
+     new Agua("Villavicencio", 2000, false),
+     new Jugo("Jugo", 4000, "Frutilla"),
+    };
+
+    foreach (Bebida b in bebidas)
+    {
+        Console.WriteLine(b.Preparar());
+        Console.WriteLine(b.MostrarPrecio());
+    }
+
+    try
+    {
+        Cafe precioInvalido = new Cafe("Negativo", -20, false);
+    }
+    catch (ArgumentException ex)
+    {
+        Console.WriteLine(ex.Message);
+    }
+}
+
+static void Ejercicio03()
+{
+    /*
+    Una librería vende distintos tipos de publicaciones: libros y revistas. Todas tienen un título, un precio y un año de publicación. Los libros tienen además un autor y un número de páginas; las revistas tienen un número de edición y una periodicidad (mensual, semanal o quincenal, usando un enum). El sistema debe poder describir cualquier publicación con un método que devuelva un texto con sus datos, listar todas las publicaciones ordenadas por precio de menor a mayor usando LINQ, y listar solo los libros usando LINQ. Si se intenta crear una publicación con precio negativo, se debe lanzar una excepción.
+    */
+}
