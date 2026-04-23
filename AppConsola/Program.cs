@@ -1,6 +1,6 @@
 using System.IO.Pipes;
 using EjerciciosPOO3;
-
+/*
 List<Vehiculo> vehiculos = new List<Vehiculo>()
 {
     new Auto("Lamborghini", "Gallardo", 2015, 2),
@@ -21,3 +21,4 @@ catch (ArgumentException ex)
 {
     Console.WriteLine(ex.Message);
 }
+*/
