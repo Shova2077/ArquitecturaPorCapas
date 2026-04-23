@@ -1,5 +1,4 @@
-﻿namespace EjerciciosPOO3;
-
+namespace EjerciciosPOO3;
 public class Vehiculo
 {
     public string Marca {get; set;}
@@ -10,7 +9,7 @@ public class Vehiculo
     {
         if (anio <= 1900)
         {
-            throw new ArgumentExcpetion("El vehiculo es muy antiguo")
+            throw new ArgumentException("El vehiculo es muy antiguo");
         }
             Marca = marca;
             Modelo = modelo;
