@@ -10,6 +10,6 @@ public class Agua : Bebida
     }
     public override string Preparar()
     {
-        return $"Se esta preparando {Nombre} con {(EsConGas ? "Sí" : "No")}";
+        return $"Preparando Agua marca: {Nombre} con gas: {(EsConGas ? "Sí" : "No")}";
     }
 }

@@ -11,6 +11,6 @@ public class Jugo : Bebida
 
     public override string Preparar()
     {
-        return $"Se esta preparando un {Nombre} de {Fruta}";
+        return $"Preparando {Nombre} de {Fruta}";
     }
 }
