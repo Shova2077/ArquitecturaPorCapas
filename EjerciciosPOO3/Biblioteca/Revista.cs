@@ -17,5 +17,8 @@ public class Revista : Atributo
         Edicion = edicion;
         Periodicidad = periodicidad;
     }
-
+    public override string Describir()
+    {
+        return $"La edicion de la revista es: {Edicion} y la periodicidad es: {Periodicidad}";
+    }
 }
