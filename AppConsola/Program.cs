@@ -7,6 +7,7 @@ while (menu == true)
     Console.WriteLine("---Menu de Ejercicios---");
     Console.WriteLine("1-Ejercicio 1");
     Console.WriteLine("2-Ejercicio 2");
+    Console.WriteLine("3-Ejercicio 3");
     Console.WriteLine("0- Salir");
     int op = Convert.ToInt32(Console.ReadLine());
     switch (op)

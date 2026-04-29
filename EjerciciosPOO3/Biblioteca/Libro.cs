@@ -16,4 +16,8 @@ public class Libro : Atributo
         return $"Nombre del autor del Libro {Autor}, Cantidad: {Paginas}";
     }
 
+    public void ListarPublicaciones()
+    {
+        
+    }
 }
