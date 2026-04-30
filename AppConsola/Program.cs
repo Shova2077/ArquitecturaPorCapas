@@ -79,8 +79,16 @@ static void Ejercicio02()
 
 static void Ejercicio03()
 {
+List<Libro> libros = new List<Libro>
+{
+    new Libro("El Dia Que Curly Billy Mató al Loco Saint McGee", 2500, 1824, "Carita Negra", 540),
+    new Libro("El Señor de los Anillos", 5000, 1954, "J.R.R. Tolkien", 1178),
+    new Libro("El Principito", 1500, 1943, "Antoine de Saint-Exupéry", 96),
+    new Libro("El Hobbit", 3000, 1937, "J.R.R. Tolkien", 310)
+};
 
-
-
-   
+    foreach (Libro l in libros)
+    {
+        Console.WriteLine(l.Describir());
+    }
 }
